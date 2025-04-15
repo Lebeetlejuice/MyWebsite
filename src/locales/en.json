@@ -1,0 +1,29 @@
+{
+  "welcome": "Welcome",
+  "message": "Hello, how are you?",
+  "navbar": {
+    "home": "Home",
+    "about": "About Me",
+    "projects": "My Projects",
+    "contact": "Contact",
+    "language": "Language"
+  },
+  "backgroundScreen": {
+    "developerTitle": "Fullstack Developer",
+    "location": "Based in Paris",
+    "description": "I create engaging digital experiences that help businesses connect with their audience and achieve their goals.",
+    "viewWork": "View My Work",
+    "contactMe": "Contact Me"
+  },
+  "homePage": {
+    "welcomeMessage": "Welcome to my portfolio"
+  },
+  "myProjects": {
+    "title": "My Projects"
+  },
+  "aboutPage": {
+    "title": "About Me",
+    "titleSection": "Let's build something great",
+    "paragrapheSection": " Whether you have a question, a project, or just want to say hi — my inbox is always open."
+  }
+}

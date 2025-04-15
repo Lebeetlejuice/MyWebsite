@@ -1,0 +1,29 @@
+{
+  "welcome": "Bienvenue",
+  "message": "Bonjour, comment ça va ?",
+  "navbar": {
+    "home": "Accueil",
+    "about": "À propos de moi",
+    "projects": "Mes Projets",
+    "contact": "Contact",
+    "language": "Langue"
+  },
+  "backgroundScreen": {
+    "developerTitle": "Développeur Fullstack",
+    "location": "Basé à Paris",
+    "description": "Je crée des expériences numériques engageantes qui aident les entreprises à se connecter avec leur audience et à atteindre leurs objectifs.",
+    "viewWork": "Voir mes travaux",
+    "contactMe": "Contactez-moi"
+  },
+  "homePage": {
+    "welcomeMessage": "Bienvenue sur mon portfolio"
+  },
+  "myProjects": {
+    "title": "Mes Projets"
+  },
+  "aboutPage": {
+    "title": "A propos de moi",
+    "titleSection": "Construisons quelque chose de grand",
+    "paragrapheSection": "Je suis un développeur passionné par la création d'applications web et mobiles. J'aime relever des défis techniques et apprendre de nouvelles technologies."
+  }
+}

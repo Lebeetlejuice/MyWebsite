@@ -1,39 +1,99 @@
 <script setup>
 import MegaMenu from 'primevue/megamenu';
 import { ref } from 'vue';
-const items = ref([
-      {
-        label: 'MAFFEI Enzo',
-      },
-      {
-        label: 'Home',
-      },
-      {
-        label: 'Experiences',
-      },
-      {
-        label: 'Etudes',
-      },
-      {
-        label: 'In progress...',
-      },
-      {
-        label: 'Contact',
-      },
-    ]);
+import { useI18n } from 'vue-i18n';
+import { computed } from 'vue';
 
+const { t, locale } = useI18n();
+
+const isDropdownOpen = ref(false);
+
+const toggleDropdown = () => {
+  isDropdownOpen.value = !isDropdownOpen.value;
+};
+
+const switchLang = (lang) => {
+  locale.value = lang;
+  localStorage.setItem('app_lang',lang); 
+  isDropdownOpen.value = false;
+};
+
+const items = computed(() => [
+  {
+    label: 'MAFFEI Enzo',
+  },
+  {
+    label: t('navbar.home'),
+    href: '#home',
+  },
+  {
+    label: t('navbar.about'),
+    href: '#about',
+  },
+  {
+    label: t('navbar.projects'),
+    href: '#projects',
+  },
+  {
+    label: t('navbar.contact'),
+    href: '#contact',
+  },
+]);
 </script>
 
 <template>
-    <MegaMenu :pt="{	root: {class:'p-4 shadow-xl'},rootList: {class:'flex justify-end w-full'},item:{class:'flex px-[70px]'} }" style="border-radius: 6rem" :model="items" orientation="horizontal">
-      <template #start>
-        <img alt="lineMdGithubLoop0" class="logo px-10" src="./../assets/github.svg"/>  
-        <span class="text-center font-serif text-1xl font-semibold">{{ items[0].label }}</span>
-      </template>
-      <template #item="{ item }">
-        <a v-if="item !== items[0]">
-          <span class="whitespace-nowrap text-lg font-serif">{{ item.label }}</span>
-        </a>
-      </template>
-    </MegaMenu>
+  <MegaMenu
+    :pt="{
+      root: { class: 'shadow-xl flex flex-col sm:flex-row items-center sm:justify-between w-full bg-white fixed top-0 left-0 z-50' },
+      rootList: { class: 'flex flex-col sm:flex-row justify-center sm:justify-end w-full gap-2 sm:gap-4' },
+      item: { class: 'flex justify-center px-4 sm:px-[70px] py-2 rounded-full' },
+    }"
+    style="border-radius: 6rem"
+    :model="items"
+    orientation="horizontal"
+  >
+    <template #start>
+      <div class="flex items-center gap-4 sm:gap-10 lg:pl-3">
+        <img
+          alt="lineMdGithubLoop0"
+          class="logo h-8 sm:h-10 w-auto"
+          src="./../assets/github.svg"
+        />
+        <span class="text-center font-serif text-lg sm:text-xl font-semibold">
+          {{ items[0].label }}
+        </span>
+        <!-- Dropdown for language selection -->
+        <div class="relative">
+          <button
+            @click="toggleDropdown"
+            class="px-4 py-2 text-gray-800 rounded-full"
+          >
+            🌐 {{ t('navbar.language') }}
+          </button>
+          <div
+            v-if="isDropdownOpen"
+            class="absolute left-1/2 transform -translate-x-1/2 mt-2 w-40 bg-white border border-gray-200 rounded-lg shadow-lg z-50"
+          >
+            <button
+              @click="switchLang('en')"
+              class="block w-full px-4 py-2 text-left text-gray-800 hover:bg-gray-100"
+            >
+              🇺🇸 English
+            </button>
+            <button
+              @click="switchLang('fr')"
+              class="block w-full px-4 py-2 text-left text-gray-800 hover:bg-gray-100"
+            >
+              🇫🇷 Français
+            </button>
+          </div>
+        </div>
+      </div>
+    </template>
+    <template #item="{ item }">
+      <a v-if="item.href" :href="item.href" class="whitespace-nowrap text-sm sm:text-lg font-serif">
+        {{ item.label }}
+      </a>
+    </template>
+  </MegaMenu>
 </template>
