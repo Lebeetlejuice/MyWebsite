@@ -3,8 +3,8 @@ import en from './locales/en.json'
 import fr from './locales/fr.json'
 
 const i18n = createI18n({
-  locale: localStorage.getItem('app_lang') || 'en', // Langue par défaut ou celle stockée
-  fallbackLocale: 'en',
+  locale: localStorage.getItem('app_lang') || 'fr', // Langue par défaut ou celle stockée
+  fallbackLocale: 'fr',
   messages: {
     en,
     fr

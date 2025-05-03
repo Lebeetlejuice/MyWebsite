@@ -1,4 +1,7 @@
 <script setup>
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
 </script>
 
 <template>
@@ -12,29 +15,27 @@
         <!-- Text Content -->
         <div>
           <h1 class="text-5xl sm:text-7xl font-bold mb-6 leading-tight">
-            Fullstack
+            {{ t('backgroundScreen.developerTitle') }}
             <br />
-            Developer
+            {{ t('backgroundScreen.developerTitle2') }}
             <br />
-            <span class="text-gray-400">Based in Paris</span>
+            <span class="text-gray-400">{{ t('backgroundScreen.location') }}</span>
           </h1>
           <p class="text-xl text-gray-600 mb-8 leading-relaxed">
-            I create engaging digital experiences that help businesses connect
-            with their audience and achieve their goals.
+            {{ t('backgroundScreen.description') }}
           </p>
           <div class="flex gap-4">
             <a
               href="#projects"
               class="inline-flex items-center px-6 py-3 bg-black text-white text-base font-medium rounded-full hover:bg-gray-800 transition-colors"
             >
-              View My Work
-
+              {{ t('backgroundScreen.viewWork') }}
             </a>
             <a
               href="#contact"
               class="inline-flex items-center px-6 py-3 border border-black text-base font-medium rounded-full hover:bg-black hover:text-white transition-colors"
             >
-              Contact Me
+              {{ t('backgroundScreen.contactMe') }}
             </a>
           </div>
         </div>
@@ -46,11 +47,9 @@
             alt="Developer workspace with code on screen"
             class="rounded-2xl shadow-2xl w-full aspect-[16/9] object-cover"
           />
-          <div
-            class="absolute -bottom-4 -right-4 bg-white p-4 rounded-xl shadow-lg"
-          >
+          <div class="absolute -bottom-4 -right-4 bg-white p-4 rounded-xl shadow-lg">
             <p class="text-sm font-medium">
-              Currently available for freelance work
+              {{ t('backgroundScreen.message') }}
             </p>
           </div>
         </div>
