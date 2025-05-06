@@ -65,7 +65,7 @@
 
       <!-- Social Icons -->
       <div class="pt-12 flex justify-center gap-6 text-gray-700">
-        <a href="https://github.com" target="_blank" class="hover:text-black transition">
+        <a href="https://github.com/enzoMaffei" target="_blank" class="hover:text-black transition">
           <Icon icon="mdi:github" class="w-6 h-6" />
         </a>
         <a
