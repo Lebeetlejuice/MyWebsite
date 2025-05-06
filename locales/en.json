@@ -4,7 +4,7 @@
   "navbar": {
     "home": "Home",
     "about": "About Me",
-    "projects": "My Projects",
+    "projects": "My experience",
     "contact": "Contact",
     "language": "Language"
   },
@@ -72,7 +72,7 @@
     }
   },
   "ProjectsPage": {
-    "title": "My Projects",
+    "title": "My Experience",
     "list": [
       {
         "name": "EDF",
