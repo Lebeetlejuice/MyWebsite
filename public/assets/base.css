@@ -84,12 +84,3 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-@font-face {
-  font-family: 'Futura';
-  src:
-    url('/path/to/fonts/futura.woff2') format('woff2'),
-    url('/path/to/fonts/futura.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}

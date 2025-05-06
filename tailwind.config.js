@@ -5,6 +5,9 @@ export default {
     extend: {
       backgroundImage: {
         'logo-test': "url('/src/assets/ordinateur.jpg')"
+      },
+      fontFamily: {
+        futura: ['Futura', 'sans-serif'] // Ajoute Futura ici
       }
     }
   },

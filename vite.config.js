@@ -11,5 +11,11 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
+  },
+  build: {
+    // Specify the Vue production build
+    alias: {
+      vue: 'vue/dist/vue.esm-bundler.prod.js'
+    }
   }
 })

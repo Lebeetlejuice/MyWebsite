@@ -51,17 +51,17 @@ const items = computed(() => [
       rootList: {
         class: 'flex flex-col sm:flex-row justify-center sm:justify-end rounded-full'
       },
-      item: { class: 'flex justify-center sm:pr-[40px] bg-white' },
+      item: { class: 'flex justify-center sm:pr-[40px] bg-white mr-4' },
       button: { class: 'flex justify-center sm:px-[30px] py-2' }
     }"
-    style="border-radius: 9999px; background-color: white"
+    style="border-radius: 9999px; background-color: white; padding: 0.3rem"
     :model="items"
     orientation="horizontal"
   >
     <template #start>
       <div class="flex items-center gap-4 sm:gap-10 pl-3 sm:py-2">
         <img alt="lineMdGithubLoop0" class="logo h-8 sm:h-10 w-auto" src="./../assets/github.svg" />
-        <span class="text-center font-serif text-lg sm:text-xl font-semibold">
+        <span class="text-center font-serif text-lg sm:text-xl font-futura font-semibold">
           {{ items[0].label }}
         </span>
         <!-- Dropdown for language selection -->

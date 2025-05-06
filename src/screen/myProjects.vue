@@ -65,13 +65,13 @@ const responsiveOptions = [
             :numScroll="1"
             :responsiveOptions="responsiveOptions"
             autoplay
-            :autoplayInterval="10000"
+            :autoplayInterval="7000"
             circular
             class="flex w-full h-auto transition-transform duration-1000 ease-in-out mt-8"
           >
             <template #item="slotProps">
               <div
-                class="border border-gray-200 rounded-xl p-4 sm:p-6 bg-white shadow-md hover:shadow-lg transition-shadow duration-300 h-full flex flex-col justify-between"
+                class="border border-gray-200 rounded-xl p-4 sm:p-6 bg-white transition-shadow duration-300 h-full flex flex-col justify-between"
               >
                 <h1 class="text-xl sm:text-2xl lg:text-3xl font-bold text-center mb-4">
                   {{ slotProps.data.boite }}
