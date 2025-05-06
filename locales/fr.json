@@ -1,0 +1,109 @@
+{
+  "welcome": "Bienvenue",
+  "message": "Bonjour, comment allez-vous ?",
+  "navbar": {
+    "home": "Accueil",
+    "about": "À propos",
+    "projects": "Mes Projets",
+    "contact": "Contact",
+    "language": "Langue"
+  },
+  "backgroundScreen": {
+    "developerTitle": "Développeur",
+    "developerTitle2": "Fullstack",
+    "location": "Basé à Paris",
+    "description": "Je conçois des solutions numériques centrées sur l'utilisateur, alliant performance, design et scalabilité — pour aider les entreprises à se développer tout en approfondissant mon expertise dans un rôle collaboratif et de long terme.",
+    "viewWork": "Voir mes projets",
+    "contactMe": "Me contacter",
+    "message": "Disponible actuellement"
+  },
+  "homePage": {
+    "welcomeMessage": "Bienvenue sur mon portfolio"
+  },
+  "myProjects": {
+    "title": "Mes Projets"
+  },
+  "aboutPage": {
+    "title": "À propos de moi",
+    "titleSection": "Construisons quelque chose de grand",
+    "paragrapheSection": "Que vous ayez une question, un projet ou que vous vouliez simplement dire bonjour — ma boîte mail est toujours ouverte.",
+    "TitlePage": "Me Contacter",
+    "sendButton": "Envoyer",
+    "Name": "Votre nom",
+    "Email": "Votre email",
+    "Subject": "Objet du message",
+    "Message": "Votre message",
+    "MessageSend": "Votre message a été envoyé avec succès !",
+    "MessageFail": "Votre message n'a pas pu être envoyé !"
+  },
+  "HomePage": {
+    "title": "À propos de moi",
+    "intro": "Développeur créatif et polyvalent, je conçois des interfaces web, des applications mobiles et des solutions fullstack alliant performance et design. Curieux et passionné par l’IA, je reste à l’affût des dernières technologies pour livrer des projets innovants, utiles et durables.",
+    "experienceTitle": "Expériences",
+    "experience": [
+      {
+        "title": "Développeur Fullstack @ Capgemini",
+        "date": "2023 - Aujourd’hui",
+        "description": "Participation à des projets stratégiques pour EDF, le gouvernement luxembourgeois et la R&D interne, incluant développement fullstack web et mobile, architecture système, et automatisation avec Python, Java EE, Vue, React, et Swift/Kotlin."
+      },
+      {
+        "title": "Développeur Fullstack Mobile @ Zémus",
+        "date": "2021 - 2023",
+        "description": "Développeur fullstack mobile sur des projets innovants avec React Native et Python, en charge du développement complet, de la conception à la mise en ligne sur Android et iOS."
+      }
+    ],
+    "skillsTitle": "Compétences",
+    "skills": {
+      "development": "Développement",
+      "designTools": "Outils de Développement",
+      "list": [
+        "Python",
+        "Java",
+        "Vue",
+        "React.js & Native",
+        "Swift",
+        "Kotlin",
+        "SQL",
+        "Django",
+        "Flask",
+        "Java Spring"
+      ],
+      "Toolslist": ["Docker", "PostgreSQL", "Oracle", "GitLab", "GitHub", "CI/CD", "Git"]
+    }
+  },
+  "ProjectsPage": {
+    "title": "Mes Projets",
+    "list": [
+      {
+        "name": "EDF",
+        "image": "edf",
+        "description": "Refonte d'une partie du SI d'EDF dans un environnement Agile via une architecture modulaire en microservices Python et Docker. J’ai automatisé les flux de documents (génération PDF/Word, emails, SFTP vers NAS) et développé une interface ReactJS pour les utilisateurs métiers. J’ai géré l’ensemble du cycle de développement, incluant les CRONs, pour améliorer la scalabilité et la fiabilité du système.",
+        "boite": "Capgemini"
+      },
+      {
+        "name": "Ministère du Luxembourg",
+        "image": "luxembourg",
+        "description": "Développement d’une plateforme d’habilitations de sécurité pour les résidents. Conçue en Java EE, Vue.js et PostgreSQL, elle traitait des données sensibles nécessitant un chiffrement robuste. J’ai développé des cas d’usage complets, du back-end à l’intégration front-end.",
+        "boite": "Capgemini"
+      },
+      {
+        "name": "Projet interne Capgemini",
+        "image": "capgemini",
+        "description": "Conception et développement d’une application mobile native (iOS Swift, Android Kotlin) intégrée à un modèle IA via TensorFlow. L’app assurait la collecte de données en temps réel, leur transmission sécurisée vers un back-end Python, et le retour dynamique des résultats IA. J’ai géré l’ensemble de la communication mobile/IA : authentification, API, traitement des données et retour UX.",
+        "boite": "Capgemini"
+      },
+      {
+        "name": "Wikipedia",
+        "image": "wikiway",
+        "description": "Projet en partenariat avec Wikipédia : application mobile innovante sous React Native et Flask, permettant de découvrir les monuments autour de soi via géolocalisation et requêtes SPARQL vers Wikidata. J’ai réalisé l’intégralité du développement, de la conception à la publication sur les stores Android et iOS.",
+        "boite": "Zémus"
+      },
+      {
+        "name": "Autres Projets",
+        "image": "github",
+        "description": "En parallèle de mes missions, je développe des projets personnels : bots de trading crypto via l’API Binance, jeu mobile en cours de développement, et nombreuses expérimentations autour de l’IA. Je me forme activement dans ce domaine que je souhaite explorer davantage.",
+        "boite": "Autres Projets"
+      }
+    ]
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "welcome": "Welcome",
+  "message": "Hello, how are you?",
+  "navbar": {
+    "home": "Home",
+    "about": "About Me",
+    "projects": "My Projects",
+    "contact": "Contact",
+    "language": "Language"
+  },
+  "backgroundScreen": {
+    "developerTitle": "Fullstack",
+    "developerTitle2": "Developer",
+    "location": "Based in Paris",
+    "description": "I craft user-focused digital solutions that combine performance, design, and scalability—helping businesses grow while continuing to deepen my expertise in a collaborative, long-term role.",
+    "viewWork": "View My Work",
+    "contactMe": "Contact Me",
+    "message": "Currently available for work"
+  },
+  "homePage": {
+    "welcomeMessage": "Welcome to my portfolio"
+  },
+  "myProjects": {
+    "title": "My Projects"
+  },
+  "aboutPage": {
+    "title": "About Me",
+    "titleSection": "Let's build something great",
+    "paragrapheSection": " Whether you have a question, a project, or just want to say hi — my inbox is always open.",
+    "TitlePage": "Contact Me",
+    "sendButton": "Send",
+    "Name": "Your name",
+    "Email": "Your email",
+    "Subject": "Subject mail",
+    "Message": "Your message",
+    "MessageSend": "Your message has been sent successfully!",
+    "MessageFail": "Your message could not be sent!"
+  },
+  "HomePage": {
+    "title": "About Me",
+    "intro": "I'm a creative and versatile developer with a strong passion for building beautiful, high-performance websites, mobile apps, and full-stack solutions. With expertise in modern technologies and a growing interest in AI, I design and develop impactful digital experiences that drive business success. I stay continuously informed on tech trends to ensure that every project I lead blends innovation, technical precision, and real-world value.",
+    "experienceTitle": "Experience",
+    "experience": [
+      {
+        "title": "Developer fullstack @ Capgemini",
+        "date": "2023 - Present",
+        "description": "Contributed to strategic projects for EDF, Luxembourg government, and internal R&D, covering fullstack web and mobile development, system architecture, and automation using Python, Java EE, Vue, React, and Swift/Kotlin."
+      },
+      {
+        "title": "Developer fullstack mobile @ Zémus",
+        "date": "2021 - 2023",
+        "description": "Worked as a fullstack mobile developer on innovative projects using React Native and Python, handling end-to-end development from design to deployment on both Android and iOS."
+      }
+    ],
+    "skillsTitle": "Skills",
+    "skills": {
+      "development": "Development",
+      "designTools": "Tools Development",
+      "list": [
+        "Python",
+        "Java",
+        "Vue",
+        "react.js & native",
+        "Swift",
+        "Kotlin",
+        "SQL",
+        "Django",
+        "Flask",
+        "Java spring"
+      ],
+      "Toolslist": ["Docker", "Postgresql", "Oracle", "Gitlab", "Github", "CI/CD", "Git"]
+    }
+  },
+  "ProjectsPage": {
+    "title": "My Projects",
+    "list": [
+      {
+        "name": "EDF",
+        "image": "edf",
+        "description": "Redesigned part of EDF’s information system in an Agile environment by building a modular architecture with Python microservices and Docker. Led the end-to-end automation of document workflows (PDF/Word generation, email, SFTP to NAS) and developed a ReactJS interface for business users. Managed full-cycle development from needs gathering to delivery, including CRON-based automation, improving system scalability and reliability.",
+        "boite": "Capgemini"
+      },
+      {
+        "name": "Ministry of Luxembourg",
+        "image": "luxembourg",
+        "description": "Project for the Luxembourg government involving the development of a security clearance platform for individuals seeking residency. Built with Java EE, Vue.js, and PostgreSQL, the system processed sensitive personal data, requiring robust encryption to ensure confidentiality. I was responsible for developing complete use cases end-to-end, from backend logic to frontend integration.",
+        "boite": "Capgemini"
+      },
+      {
+        "name": "Intern project for Capgemini",
+        "image": "capgemini",
+        "description": "Designed and developed a cross-platform native mobile application (iOS in Swift, Android in Kotlin) integrated with an AI model built using TensorFlow. The app allowed real-time data collection, secure transmission to a Python-based backend, and dynamic feedback based on AI inference results. I led the full implementation of the mobile-to-AI communication pipeline, including authentication, data formatting, API design, and result handling, bridging mobile UX with machine learning capabilities in production-grade environments.",
+        "boite": "Capgemini"
+      },
+      {
+        "name": "Wikipedia",
+        "image": "wikiway",
+        "description": "Project developed in partnership with Wikipedia: an innovative mobile app using React Native and Flask that helps users discover nearby historical landmarks via geolocation and SPARQL queries to Wikidata. I led the entire development, from design to publishing on Android and iOS app stores.",
+        "boite": "Zémus"
+      },
+      {
+        "name": "Other Projects",
+        "image": "github",
+        "description": "In addition to my professional experience, I actively work on personal projects, including developing crypto trading bots using the Binance API, and creating a mobile game currently under development. I am also deeply interested in AI, dedicating significant time to learning and experimenting with various models and technologies. Exploring a career in AI is something I am highly passionate about and eager to pursue.",
+        "boite": "Other Projects"
+      }
+    ]
+  }
+}
