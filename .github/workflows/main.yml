@@ -6,22 +6,25 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    environment: Env 
+    environment: Env
     steps:
-    - name: Checkout
-      uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v3
 
-    - name: Build
-      run: |
-        npm install
-        npm run-script build
-      env:
-        VITE_EMAIL_TEMPLATE_ID: ${{ secrets.VITE_EMAIL_TEMPLATE_ID }}
-        VITE_EMAIL_USER_ID: ${{ secrets.VITE_EMAIL_USER_ID }}
-        VITE_EMAIL_SERVICE_ID: ${{ secrets.VITE_EMAIL_SERVICE_ID }}
-    - name: Deploy
-      uses: JamesIves/github-pages-deploy-action@v4
-      with:
-        branch: gh-pages
-        folder: dist
-        token: ${{ secrets.DEPLOY_TOKEN }}
+      - name: Build
+        run: |
+          npm install
+          npm run-script build
+          echo "VITE_EMAIL_USER_ID=${{ secrets.VITE_EMAIL_USER_ID }}" >> .env
+          echo "VITE_EMAIL_USER_ID=${{ secrets.VITE_EMAIL_USER_ID }}" >> .env
+          echo "VITE_EMAIL_SERVICE_ID=${{ secrets.VITE_EMAIL_SERVICE_ID }}" >> .env
+        env:
+          VITE_EMAIL_TEMPLATE_ID: ${{ secrets.VITE_EMAIL_TEMPLATE_ID }}
+          VITE_EMAIL_USER_ID: ${{ secrets.VITE_EMAIL_USER_ID }}
+          VITE_EMAIL_SERVICE_ID: ${{ secrets.VITE_EMAIL_SERVICE_ID }}
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: dist
+          token: ${{ secrets.DEPLOY_TOKEN }}
